@@ -5,13 +5,12 @@ void clearInputBuffer(void);
 
 int main(void) {
 	double x, y;
-	while (1) {
 		printf("Enter one number: ");
 		scanf_s("%lf", &x);
 		printf("Enter second number: ");
 		scanf_s("%lf", &y);
 		clearInputBuffer();
-		printf("Enter operation that you want to perform (+, -, /, *)\nor \'q\' for exit: ");
+		printf("Enter operation that you want to perform (+, -, /, *): ");
 		char operation = getchar();
 		if ('q' == operation) break;
 		printf("\nResult: ");
@@ -34,7 +33,6 @@ int main(void) {
 			break;
 		}
         putchar('\n');
-	}
 	return 0;
 }
 
